@@ -1,0 +1,269 @@
+/*Resetando os estilos*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: "Poppins", sans-serif;
+}
+
+/*Estilos Gerais*/
+.seccao{
+    width: 100%;
+    float: left;
+}
+
+.conteudo{
+    width: 85%;
+    margin: 0 auto;
+}
+
+/*Barra de navegacao inicio*/
+.barra-navegacao{
+    display: flex;
+    gap: 40px;
+    justify-content:center;
+    align-items: center;
+    padding: 3% 0 5% 0;
+}
+.barra-navegacao span{
+    font-weight: bolder;
+}
+.barra-navegacao ul{
+    display: flex;
+    gap: 20px;
+    background-color: #14141a;
+    padding: 8px;
+    border-radius: 14px;
+    align-items: center;
+}
+.blog{
+    background-color: #5fc0ee;
+    padding: 6px 12px;
+    border-radius: 14px;
+}
+.barra-navegacao ul li a{
+    color: white;
+}
+/*Barra de navegacao fim*/
+
+/*Detalhes inicio*/
+.detalhes-introducao{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 0 5% 0;
+}
+
+.azul{
+    color:#5fc0ee;
+}
+.detalhes h1{
+    font-size: 4em;
+    margin: 0 0 3% 0;
+}
+.detalhes button{
+    padding: 12px 10px;
+    margin: 5% 0;
+    background-color: #5fc0ee;
+    border: none;
+    border-radius: 5px;
+    font-weight: bolder;
+    transition: 500ms ease-in-out;
+}
+.detalhes button:hover{
+    cursor:pointer;
+    color: #fff;
+}
+
+/*Detalhes fim*/
+
+
+/*Artigos inicio*/
+.seccao-artigos{
+    text-align: center;
+    margin: 5% 0;
+}
+.artigos-populares{
+    display: flex;
+    gap: 10px;
+    justify-content:center;
+    text-align: center;
+}
+.box-artigos{
+     width: 28%;   
+}
+.box-artigos p{
+    color: #5fc0ee;
+}
+
+.box-artigos img{
+    width: 100%;
+    background-color: #5fc0ee;
+    padding: 5px;
+    border-radius: 16px;
+}
+/*Artigos fim*/
+
+/*Oferta inicio*/
+.conteudo.menu-oferta{
+    display: flex;
+    gap: 0px;
+    align-items: center;
+    justify-content: center;
+    margin: 4% auto 4% auto;
+}
+.imagem-oferta img{
+    width: 80%;
+}
+
+.detalhes-oferta h1{
+    font-size: 2em;
+}
+
+.detalhes-oferta button{
+    padding: 16px;
+    margin: 6% 0;
+    background-color: #5fc0ee;
+    border: none;
+    border-radius: 6px;
+    font-weight: bolder;
+    transition: 500ms ease-in-out;
+}
+.detalhes-oferta button:hover{
+    cursor: pointer;
+    color: #fff;
+}
+/*Oferta fim*/
+
+/*Newsletter inicio*/
+.conteudo.newsletter{
+    text-align: center;
+}
+.conteudo.newsletter h1{
+    font-size: 2em;
+    margin: 0 0 2% 0;
+}
+.conteudo.newsletter input{
+    padding: 13px 35px;
+    border: 2px solid #5fc0ee;
+    margin: 3% 0;
+    border-radius: 5px;
+}
+/*Newsletter fim*/
+
+/*Rodape inicio*/
+.conteudo.rodape{
+    display: flex;
+    gap: 10px;
+    margin: 2% auto 1% auto;
+    justify-content: space-between;
+}
+
+.conteudo.rodape div{
+    width: 21%;
+}
+.rodape-box{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.rodape-box a{
+    color: black;
+    font-weight: bolder;
+}
+.rodape-box-social h3, h4{
+    margin: 5% 0;
+}
+.rodape-box-social a{
+    color: #5fc0ee;
+    font-size: 2.5em;
+    margin: 0 12px 0 0;
+}
+
+.rodape-box img{
+    width: 30%;
+}
+
+/*
+Breakpoints
+Tamanho Mobile e Tablet*/
+@media all and (min-width: 645px) and (max-width: 1279px){
+/*    Detalhes inicio*/
+    .detalhes-introducao{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .imagem-detalhes img{
+        width: 85%;
+    }
+/*    Detalhes fim*/
+    
+/*    Produtos inicio*/
+    .artigos-populares{
+        flex-direction:column;
+        align-items: center;
+    }
+    .box-artigos{
+        width: 65%;
+    }
+/*    produtos fim*/
+    
+/*    oferta inicio*/
+    .conteudo.menu-oferta{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+/*    oferta fim*/
+}
+
+@media all and (max-width: 644px){
+    
+/*    Detalhes inicio*/
+    .detalhes-introducao{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .imagem-detalhes img{
+        width: 85%;
+    }
+/*    Detalhes fim*/
+    
+/*    Produtos inicio*/
+    .artigos-populares{
+        flex-direction:column;
+        align-items: center;
+    }
+    .box-artigos{
+        width: 65%;
+    }
+/*    produtos fim*/
+    
+/*    oferta inicio*/
+    .conteudo.menu-oferta{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+/*    oferta fim*/
+    
+/*    rodape inicio*/
+    .conteudo.rodape{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .rodape-box img{
+        margin: 0 0 0 20px;
+        width: 60%;
+    }
+    
+    .rodape-box-social{
+        display: flex;
+        gap: 15px;
+        margin: 0 0 0 -200px;
+    }
+    
+}
